@@ -96,3 +96,5 @@ function calcTax(tax, salary){
 }
 
 calcTax(20, 25000);
+
+console.log('YOU DID GREAT! <3');
