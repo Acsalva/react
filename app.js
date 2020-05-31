@@ -90,9 +90,12 @@ function hiFriends(friends){
 
 
 function calcTax(tax, salary){
-    let personalAllowance = salary - 12500;
-    let taxResult = (tax * personalAllowance)/100;
-    console.log("Your tax is: " + taxResult);
+    let personalAllowance = 12000;
+    let taxableIncome = salary - personalAllowance;
+    let taxResult = (tax * taxableIncome)/100;
+    console.log("Your tax is: £" + taxResult);
+    console.log("Your take-home pay is: £" + (salary - taxResult));
+    console.log("Your allowance is: £" + personalAllowance);
 }
 
 calcTax(20, 25000);
